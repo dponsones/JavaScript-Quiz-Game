@@ -49,6 +49,7 @@ function startGame() {
 
 getNewQuestion = () => {
   if (availableQuestions.length===0 || questionCounter > MAX_questions) {
+    localStorage.setItem('mostRecentScore', score);
     return window.location.assign("highscores.html")
   };
   
@@ -74,14 +75,20 @@ choices.forEach(choice =>{
     const selectedChoice = e.target;
     const selectedAnswer= selectedChoice.dataset['number'];
 
-    const classToApply = 'incorrect';
+    let classToApply = 'incorrect';
       if (selectedAnswer == currentQuestion.answer) {
         classToApply = 'correct';
       }
- 
-console.log(classToApply);
-    
+      if (classToApply = 'correct') {
+        incrementScore(CORRECT_BONUS);
+      }
     getNewQuestion();
   });
 })
+
+incrementScore = num => {
+  score += num;
+  console.log(score);
+}
+
 startGame();

@@ -83,3 +83,15 @@
 #start-button {
   text-align: center;
 }
+
+.endbtn {
+  padding: 1px;
+  text-align: left;
+  background-color: #ddd;
+  width: 100%;
+  font-size: 15px;
+  margin: 5px;
+  border-radius: 5px;
+  border: 1px solid black;
+  text-decoration: none;
+}

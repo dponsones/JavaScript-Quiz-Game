@@ -1,0 +1,85 @@
+:root {
+  background-color: blue;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding:  5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.quiz-box {
+  width:600px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 1rem 5rem 5rem 5rem;
+  border: 2px solid red;
+}
+
+.quiz-box h1 {
+  background-color: purple;
+  color: white;
+  text-align: center;
+  padding: 1rem 1rem;
+}
+.quiz-box h2 {
+  background-color: purple;
+  color: white;
+  text-align: center;
+  padding: 1rem 1rem;
+}
+.quiz-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+
+.quiz-header #progress {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+.quiz-header #countdown {
+  color: white;
+  font-size: 1.5rem;
+  background-color: red;
+  padding: 2px;
+  
+}
+
+#question {
+  font-size: 1.5rem;
+  font-weight: 500;
+  border: 1px solid black
+}
+
+.buttons {
+  margin: 1.5rem 0 4rem 0
+}
+
+.btn {
+  text-align: left;
+  background-color: #ddd;
+  width: 100%;
+  font-size: 1rem;
+  margin: 7px 0;
+  padding: .5rem;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: whitesmoke;
+}
+
+.btn:active {
+  background-color: white;
+}
+
+#start-button {
+  text-align: center;
+}
